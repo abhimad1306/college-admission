@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title> College site</title>
+	<meta charset="utf-8">
+
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="javascript/js.js="></script>
+<style>
+.body{
+background-image: url('cambridge.jpg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+footer{
+display:block;
+}
+.cb-footer {
+    text-align: center;
+    background: #4a4a4a;
+    color: #fff;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.cb-col {
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+}
+.cb-col-100 {
+    width: 100%;
+}
+.cb-ftr-cntnr {
+    max-width: 980px;
+    margin: 30px auto;
+}
+.cb-col-25 {
+    width: 25%;
+}
+.cb-hm-text {
+    padding: 10px 18px 10px 20px;
+}
+#cb-logo-main-menu {
+    height: 40px;
+    aspect-ratio: 101px/40px;
+    width: 101px;
+	border-radius: 4px;
+}
+
+
+.cb-font-16 {
+    font-size: 16px;
+}
+.text-left {
+    text-align: left;
+}
+.text-bold {
+    font-weight: bold;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.cb-ftr-ul {
+    padding-left: 0;
+}
+.cb-ftr-lst {
+    list-style: none;
+    padding: 5px 0;
+    text-align: left;
+}
+li {
+    display: list-item;
+
+}
+.text-white {
+    color: #fff;
+}
+a, a:hover, a:active, a:focus {
+    outline: medium none;
+	cursor: pointer;
+}
+
+.cb-mobile-site{
+background-position: -165px -15px;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: -2px;
+}
+.cb-ico {
+    background: url(images/icon_sprite_v_6_6_8_2.png) no-repeat scroll;
+		background-image: url(images/icon_sprite_v_6_6_8_2.png);
+		background-size: initial;
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-attachment: scroll;
+		background-origin: initial;
+		background-clip: initial;
+		background-color: initial;
+    display: inline-block;
+}
+.cb-footer-list-rt {
+    vertical-align: 3px;
+}
+.cb-app-android {
+    background-position: -25px -16px;
+    height: 20px;
+    width: 20px;
+	margin-right: 10px;
+    margin-left: -2px;
+}
+.cb-footer-list-rt {
+    vertical-align: 3px;
+}
+.cb-app-ios {
+    background-position: -145px -17px;
+    height: 20px;
+    width: 20px;
+}
+.cb-social-fb {
+    background-position: -84px -16px;
+    height: 20px;
+    width: 20px;
+	    margin-right: 10px;
+    margin-left: -2px;
+}
+.cb-social-twitter {
+    background-position: -224px -14px;
+    height: 20px;
+    width: 20px;
+	    margin-right: 10px;
+    margin-left: -2px;
+}
+.cb-social-ytbe {
+    background-position: -1826px -15px;
+    height: 20px;
+    width: 29px;
+	    margin-right: 10px;
+    margin-left: -2px;
+}
+.cb-social-pinterest {
+    background-position: -184px -16px;
+    height: 20px;
+    width: 20px;
+	   margin-right: 10px;
+    margin-left: -2px;
+}
+.cb-ftr-cpyrght {
+    font-size: 12px;
+    color: #bababa;
+}
+.cb-col-100 {
+    width: 100%;
+}
+
+
+
+
+</style>
+</head>
+<body class="body" >
+
+<header class="mainheader">
+	<img src="images/logo.png">
+	<content id="search">
+		<form>
+  <input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
+</form>
+	</content>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="course.html">Course</a></li>
+			
+			<li><a href="Admission.html">Admission</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="login.html">Login</a></li>
+			
+		</ul> 
+	</nav>
+</header>
+<br>
+<div class="slideshow-container">
+
+<div class="iambrpslides fade">
+  <div class="numbertext">01 / 03</div>
+  <img src="./images/a.jpg">
+ </div>
+
+<div class="iambrpslides fade">
+  <div class="numbertext">02 / 03</div>
+  <img src="./images/b.jpg">
+  </div>
+
+<div class="iambrpslides fade">
+  <div class="numbertext">03 / 03</div>
+  <img src="./images/c.jpg">
+</div>
+
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("iambrpslides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {
+	slideIndex = 1
+	}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+}
+</script>
+<br>
+		
+		<script type="text/javascript">
+  document.title="Welcome to informatics college";
+</script>
+		
+				
+<script src="scripts/slider.js"></script>
+<div class="mainContent">
+	<div class="Content">
+		<article class="topContent">
+			<header>
+			 <h3><a href="#" title="My First Post">About college </a>	</h3>  
+			</header>
+			
+			<content>
+<p>
+ Informatics College is an autonomous Private Institution dedicated to maintain excellent academic performance. Since its establishment in 2011, Informatics College has been actively working as a regular franchisee of Informatics Education Limited, Singapore. 
+ Informatics College has an established track record of Academic excellence, within the Networks of Informatics – Globally. 
+ Informatics College is today producing competitive Graduates, creating an enviable position among employers and Universities both Nationally and Internationally. Informatics College Pokhara, today can proudly boast of having produced sustainable and marketable graduates in various IT and engineering programs.
+</p>
+			</content>
+		</article>
+
+		<article class="bottomContent">
+			<header>
+			<h3><a href="#" title="Pathway Programme">Pathway Programme</a>	</h3>  
+			</header>
+			
+			<content>
+<p>
+We make learning exclusive for you.
+We know everyone has different learning needs and lifestyles. We have learning modes ranging from traditional classroom learning, to e-learning and a combination of both to accommodate to different learning patterns.
+
+Our holistic education programme places equal emphasis on both academic and non-academic, co-curricular activities. We strive to provide learning and support services, as well as a conducive environment for you to learn, live and develop into global thought leaders of tomorrow.
+
+We focus in giving you the best.
+
+</p>
+			</content>
+		</article>
+
+		
+	</div>
+</div>
+<aside class="top-sidebar">
+	<article>
+		<h3>Join us today!</h3>
+		<p>Embark on an exciting learning journey with Informatics</p>
+	</article>
+</aside>
+
+<aside class="middle-sidebar">
+	<article>
+		<h3>Your Boardroom Qualification</h3>
+		<p>A Degree to stand out from the crowd…...</p>
+	</article>
+</aside>
+
+
+<footer class="mainFooter">
+<div class="cb-footer cb-col-100 cb-col">
+<div class="cb-ftr-cntnr">
+<div class="cb-col-25 cb-col">
+<a href="/" target="_self" class="cb-hm-text">
+<img src="images/logo.png"  alt="cricbuzz logo" itemprop="image" id="cb-logo-main-menu">
+</a>
+</div>
+<div class="cb-col-25 cb-col">
+<div class="text-left cb-font-16 text-bold">SITE & APPS</div>
+<ul class="cb-ftr-ul">
+
+<li class="cb-ftr-lst"><a class="text-white" href="" target="_blank" rel="noopener noreferrer">
+<span class="cb-app-android cb-ico"></span><span class="cb-footer-list-rt">Android</span></a></li><li class="cb-ftr-lst">
+<a class="text-white" href="" target="_blank" rel="noopener noreferrer"><span class="cb-app-ios cb-ico"></span>
+<span class="cb-footer-list-rt">iOS</span></a></li></ul></div>
+<div class="cb-col-25 cb-col"><div class="text-left cb-font-16 text-bold">FOLLOW US ON</div>
+<ul class="cb-ftr-ul">
+<li class="cb-ftr-lst"><a class="text-white" title="Facebook" href="" target="_blank" rel="noopener noreferrer">
+<span class="cb-social-fb cb-ico"></span><span class="cb-footer-list-rt">facebook</span></a></li>
+<li class="cb-ftr-lst"><a class="text-white" title="Twitter" href="" target="_blank" rel="noopener noreferrer"><span class="cb-social-twitter cb-ico"></span><span class="cb-footer-list-rt">twitter</span></a></li>
+<li class="cb-ftr-lst"><a class="text-white" title="Youtube" href="" target="_blank" rel="noopener noreferrer"><span class="cb-social-ytbe cb-ico"></span><span class="cb-footer-list-rt">youtube</span></a></li>
+<li class="cb-ftr-lst"><a class="text-white" title="Pinterest" href="" target="_blank" rel="noopener noreferrer"><span class="cb-social-pinterest cb-ico"></span><span class="cb-footer-list-rt">Pinterest</span></a></li></ul></div>
+<div class="cb-col-25 cb-col"><div class="text-left cb-font-16 text-bold">About college</div><ul class="cb-ftr-ul">
+<li class="cb-ftr-lst"><a class="text-white" title="Careers" href="index.html">home<a></li>
+<li class="cb-ftr-lst"><a class="text-white" title="Advertise" href="course.html">course</a></li>
+<li class="cb-ftr-lst"><a class="text-white" rel="nofollow" title="Privacy Policy" href="admission.html">admission</a></li>
+<li class="cb-ftr-lst"><a class="text-white" rel="nofollow" title="Terms of Use" href="contact.html">contact</a></li>
+<li class="cb-ftr-lst"><a class="text-white" title="Cricbuzz TV Ads" href="login.html" rel="noopener noreferrer">login page</a></li>
+<li ng-if='$root.$GEO.isGeo("EU")' class="cb-ftr-lst"><a class="text-white cursor-pointer" title="Privacy Preferences" onclick="window._sp_.loadPrivacyManagerModal(17869)"></a></li></ul></div>
+<div class='cb-col-100 cb-col cb-ftr-cpyrght'>| | &copy; 2021 informatics college . All rights reserved |<a class='cb-ftr-cpyrght text-hvr-underline' href="http://timesofindia.indiatimes.com/" target="_blank" rel="noopener noreferrer"></a> | <a href="http://navbharattimes.indiatimes.com/" target="_blank" rel="noopener noreferrer" class='cb-ftr-cpyrght text-hvr-underline'></a>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
